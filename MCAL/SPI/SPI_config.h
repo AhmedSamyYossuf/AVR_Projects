@@ -1,0 +1,69 @@
+/*
+ * SPI_config.h
+ *
+ *  Created on: Sep 14, 2019
+ *      Author: Amr
+ */
+
+/*
+ * DATA_ORDER options:
+ *
+ * SPI_MSB_FIRST
+ * SPI_LSB_FIRST
+ *
+ * */
+
+#define SPI_DATA_ORDER		SPI_MSB_FIRST
+
+/*
+ * MASTER_SLAVE_SELECT options:
+ *
+ * SPI_MASTER
+ * SPI_SLAVE
+ *
+ * */
+
+#define SPI_MASTER_SLAVE_SELECT		SPI_MASTER
+
+/*
+ * CLK_POLARITY_SELECT options:
+ *
+ * SPI_CLK_POL_RISING
+ * SPI_CLK_POL_FALLING
+ *
+ * */
+
+#define SPI_CLK_POLARITY_SELECT		SPI_CLK_POL_RISING
+
+/*
+ * CLK_PHASE_SELECT options:
+ *
+ * SPI_CLK_PHASE_SETUP_FIRST
+ * SPI_CLK_PHASE_SAMPLE_FIRST
+ *
+ * */
+
+#define SPI_CLK_PHA_SELECT	SPI_CLK_PHASE_SETUP_FIRST
+
+
+/*
+ * CLK_PRESCALER_SELECT options:
+ *
+ * SPI_CLK_PRESCALER_4
+ * SPI_CLK_PRESCALER_16
+ * SPI_CLK_PRESCALER_64
+ * SPI_CLK_PRESCALER_128
+ *
+ * */
+
+#define SPI_CLK_PHASE_SELECT	SPI_CLK_PRESCALER_16
+
+/*
+ * CLK_SPEED_SELECT options:
+ *
+ * SPI_CLK_NORMAL_SPEED	// Use the prescaler defined in SPI_CLK_PHASE_SELECT
+ * SPI_CLK_DOUBLE_SPEED	// Divide the prescaler in SPI_CLK_PHASE_SELECT over 2
+ * */
+
+#define SPI_CLK_SPEED_SELECT	SPI_CLK_NORMAL_SPEED
+
